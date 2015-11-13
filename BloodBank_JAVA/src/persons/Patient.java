@@ -13,8 +13,8 @@ public class Patient extends Personne {
         this.degre_urg=degre_urg;
         this.quantite=quantite;
     }
-    public void setQuantité(int quantité){
-        this.quantite=quantité;
+    public void setQuantite(int quantite){
+        this.quantite=quantite;
     }
     public int getQuantite(){
         return this.quantite;
