@@ -8,15 +8,14 @@ public class Donor extends Personne {
    private char groupage;
     private int n;
     private int quantite;
-   // private char adresse; normalement makanch
-    //private bool motivation ; hadi fct 
+   
     public donor(char groupage , int n, int quantite,char adresse, bool motivation){
         super (name, firstName, grouping,adresse[]);
                 this.groupage=groupage;
                  this.n=n;
                   this.quantite=quantite;
                   this.adresse=adresse;
-    } // sagmih ki stagmi les atribus taw3ek ok
+    } 
    
     public void setGroupage (char gropage){
         this.groupage=groupage;
@@ -53,8 +52,7 @@ public void setMotivation( bool motivation){
 public bool getMotivation (){
     return this.motivation;
  
-/* wal motivation tji fct 
-je c po fal corp ta3ha cha yji dsl */
+
 
 }     
 }
