@@ -6,17 +6,19 @@ package persons;
  */
 public class Volunteer extends Personne {
   
+ 
      
      private int age ;
      private double poids ;
      private int physical_cond_scale ;
 
-    public Volunteer(int age, double poids, String name, String firstName, char grouping) {
-        super(name, firstName, grouping);
+    public Volunteer(int age, double poids, int physical_cond_scale, String name, String firstName, String grouping, String[] adresse) {
+        super(name, firstName, grouping, adresse);
         this.age = age;
         this.poids = poids;
+        this.physical_cond_scale = physical_cond_scale;
     }
-     
+
 
     public int getAge() {
         return age;
@@ -45,4 +47,4 @@ public class Volunteer extends Personne {
      
    
      }
-
+     
