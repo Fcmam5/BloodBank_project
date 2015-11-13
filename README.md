@@ -5,8 +5,8 @@ Project in progress, please come back later.
 
 ##Project timeline
 * November 13,2015 
-** Primary project structure
+* * Primary project structure
 
-** Preparing a [Web page] (http://fcmam5.github.io/BloodBank_project)
+* * Preparing a [Web page] (http://fcmam5.github.io/BloodBank_project)
 
-** Creating a [Trello board] (https://trello.com/b/PdsY1RGh/bloodbank-project)
+* * Creating a [Trello board] (https://trello.com/b/PdsY1RGh/bloodbank-project)
