@@ -4,5 +4,6 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Bismi Allah");
+        // bismi allah are u ready :D 
     }
 }
