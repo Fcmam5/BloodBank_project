@@ -22,7 +22,7 @@ public class Patient extends Personne {
     public void setDegre_urg(int degre_urg){
         this.degre_urg=degre_urg;
     }
-    public int Degre_urg(){
+    public int getDegre_urg(){
         return this.degre_urg;
     }
 }
