@@ -9,7 +9,7 @@ public class Patient extends Personne {
    private int quantite;
     private int degre_urg;
     public Patient(int quantite,int degre_urg){
-        super();
+        super(name, firstName, grouping);
         this.degre_urg=degre_urg;
         this.quantite=quantite;
     }
