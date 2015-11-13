@@ -38,6 +38,8 @@ abstract class Personne {
 
 
     }
+    
+    /*this one is for the doctor and the admin */
     public Personne(String name, String firstName){
         this.name=name;
         this.firstName=firstName;
