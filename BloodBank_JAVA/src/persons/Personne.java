@@ -5,9 +5,10 @@ package persons;
  * Implemented by nesrinehanane
  */
 abstract class Personne {
-  private String name;
+    private String name;
     private String firstName;
-    private char grouping;
+    private String grouping;
+    private String [] adresse= new String[2];
 
     public void setName(String name){
         this.name=name;
@@ -22,12 +23,23 @@ abstract class Personne {
     public String getFirstName(){
         return this.firstName;
     }
-    public void setGrouping(char grouping){
+    public void setGrouping(String grouping){
         this.grouping=grouping;
     }
-    public char getGrouping(){
+    public String getGrouping(){
         return this.grouping;
     }
+        public Personne(String name, String firstName, String grouping , String adresse[]){
+        this.grouping=grouping;
+        this.name=name;
+        this.firstName=firstName;
+        this.adresse[0]=null;
+        this.adresse[1]=null;
 
 
+    }
+    public Personne(String name, String firstName){
+        this.name=name;
+        this.firstName=firstName;
+    }
 }
