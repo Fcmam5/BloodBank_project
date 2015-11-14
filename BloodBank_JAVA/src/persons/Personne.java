@@ -8,11 +8,31 @@ abstract class Personne {
     private String name;
     private String firstName;
     private String grouping;
-    private String [] adresse= new String[2];
+    private String adresse[] = new String[2]; // [ "Wilaya" || "Daira"]
+
+
+    public Personne(String name, String firstName, String grouping , String adresse_given[]){
+        this.grouping=grouping;
+        this.name=name;
+        this.firstName=firstName;
+        /**
+         * adresse_given[0] should be "Wilaya"
+         * adresse_given[1] should be "Daira"
+         */
+        this.adresse[0]=adresse_given[0];
+        this.adresse[1]=adresse_given[1];
+
+    }
+
+    /*this one is for the doctor and the admin */
+    public Personne(String name, String firstName){
+        this.name=name;
+        this.firstName=firstName;
+    }
+
 
     public void setName(String name){
         this.name=name;
-
     }
     public String getName(){
         return this.name;
@@ -29,19 +49,6 @@ abstract class Personne {
     public String getGrouping(){
         return this.grouping;
     }
-        public Personne(String name, String firstName, String grouping , String adresse[]){
-        this.grouping=grouping;
-        this.name=name;
-        this.firstName=firstName;
-        this.adresse[0]=null;
-        this.adresse[1]=null;
 
 
-    }
-    
-    /*this one is for the doctor and the admin */
-    public Personne(String name, String firstName){
-        this.name=name;
-        this.firstName=firstName;
-    }
 }
