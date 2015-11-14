@@ -2,33 +2,19 @@ package persons;
 
 /**
  * Created by fcmam5 on 11/13/15.
- * Implemented by
+ * Implemented by  nourelhouda31
  */
 public class Volunteer extends Personne {
-  
- 
-     
-     private int age ;
+
      private double poids ;
-     private int physical_cond_scale ;
+     private byte physical_cond_rate; // Scale on 5 (Format: x/5)
 
-    public Volunteer(int age, double poids, int physical_cond_scale, String name, String firstName, String grouping, String[] adresse) {
-        super(name, firstName, grouping, adresse);
-        this.age = age;
+    public Volunteer(int age, double poids, byte physical_cond_rate, String name, String firstName, String grouping, String adresse[]) {
+        super(name, firstName, age,grouping, adresse);
         this.poids = poids;
-        this.physical_cond_scale = physical_cond_scale;
+        this.physical_cond_rate = physical_cond_rate;
     }
 
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-    
-    
     
     public double getPoids() {
         return poids;
@@ -37,12 +23,12 @@ public class Volunteer extends Personne {
         this.poids = poids;
     }
 
-    public int getPhysical_cond_scale() {
-        return physical_cond_scale;
+    public byte getPhysical_cond_rate() {
+        return physical_cond_rate;
     }
 
-    public void setPhysical_cond_scale(int physical_cond_scale) {
-        this.physical_cond_scale = physical_cond_scale;
+    public void setPhysical_cond_rate(byte physical_cond_rate) {
+        this.physical_cond_rate = physical_cond_rate;
     }
      
    
