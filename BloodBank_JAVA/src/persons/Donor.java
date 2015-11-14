@@ -2,7 +2,7 @@ package persons;
 
 /**
  * Created by fcmam5 on 11/13/15.
- * Implemented by
+ * Implemented by Mouilah-Sarah
  */
 public class Donor extends Personne {
     private static int donNum = 0;
