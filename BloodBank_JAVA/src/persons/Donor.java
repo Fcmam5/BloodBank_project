@@ -5,54 +5,40 @@ package persons;
  * Implemented by
  */
 public class Donor extends Personne {
-   private char groupage;
-    private int n;
+    private static int donNum = 0;
     private int quantite;
-   
-    public donor(char groupage , int n, int quantite,char adresse, bool motivation){
-        super (name, firstName, grouping,adresse[]);
-                this.groupage=groupage;
-                 this.n=n;
-                  this.quantite=quantite;
-                  this.adresse=adresse;
-    } 
-   
-    public void setGroupage (char gropage){
-        this.groupage=groupage;
+    boolean motivation;
+
+    public Donor(String name, String firstName, int age, String grouping, String[] adresse, int quantite, boolean motivation) {
+        super(name, firstName, age, grouping, adresse);
+        this.donNum++;
+        this.quantite = quantite;
+        this.motivation = motivation;
+    }
+
+
+    public void setGroupage (String gropage){
+        setGrouping(gropage);
         
 }
-    public char getGroupage(){
-        return this.groupage:
+    public String getGroupage(){
+        return getGrouping();
 }
-    public void setN (int n){
-        this.n=n;
-    
-    }
-    public int getN( ){
-        return this.n;
+
+    public int getDonNum( ){
+        return this.donNum;
        
     }
-public void setQuantite (int quantite){
+
+    // HOw much he gives ?
+    public void setQuantite (int quantite){
     this.quantite=quantite;
 }
-public int getQuantite (){
-    return this.quantite;
-    
-}
-public void setAdresse (char adresse){
-    this.adresse=adresse; // hadi makanch
-}
-public char getAdresse (){
-    return this.adresse; // hadi makanch 
-    
-}
-public void setMotivation( bool motivation){
-    this.motivation=motivation;
-}
-public bool getMotivation (){
-    return this.motivation;
- 
+
+    public int getQuantite (){
+        return this.quantite;
+    }
 
 
 }     
-}
+
