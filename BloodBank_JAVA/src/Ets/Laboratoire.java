@@ -6,4 +6,7 @@ package Ets;
  */
 public class Laboratoire {
 
+    //Analyser(RepMedcin:Boolean);
+    //Informer() > Mail, Telephone
+
 }

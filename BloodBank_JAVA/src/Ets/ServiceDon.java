@@ -5,4 +5,7 @@ package Ets;
  * Implemented by Doudi & Leila
  */
 public class ServiceDon {
+
+    //isAgeTrue : Boolean
+    //isHealthy : Boolean
 }
