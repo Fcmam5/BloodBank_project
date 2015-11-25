@@ -8,8 +8,7 @@ public class Volunteer extends Personne {
 
      private double poids ;
      private byte physical_cond_rate; // Scale on 5 (Format: x/5)
-     private String mail;
-     private int numTel;
+
 
     public Volunteer(int age, double poids, byte physical_cond_rate, String name, String firstName, String grouping, String adresse[]) {
         super(name, firstName, age,grouping, adresse);
