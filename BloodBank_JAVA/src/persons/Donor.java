@@ -11,12 +11,16 @@ public class Donor extends Personne {
     private int quantite;
     private boolean motivation;
     private Object donorCard[] = new Object[3]; // [[int DonorKey]|[String email]|[int telNumber]]
+  private  String mail;
+  private int numTel;
 
-    public Donor(String name, String firstName, int age, String grouping, String[] adresse, int quantite, boolean motivation) {
+    public Donor(String name, String firstName, int age, String grouping, String[] adresse, int quantite, boolean motivation,String mail, int numTel) {
         super(name, firstName, age, grouping, adresse);
         this.donNum++;
         this.quantite = quantite;
         this.motivation = motivation;
+         this.mail=mail;
+        this.numTel=numTel;
     }
 
 
@@ -40,6 +44,19 @@ public class Donor extends Personne {
 
     public int getQuantite (){
         return this.quantite;
+    }
+      public void setMail(String mail){
+         this.mail=mail;
+         
+    }
+    public String getMail(){
+         return mail;
+    }
+    public void setNumTel(int numTel){
+         this.numTel=numTel;
+    }
+    public int getNumTel(){
+         return numTel;
     }
 
 
