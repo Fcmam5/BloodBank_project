@@ -10,7 +10,7 @@ public class Donor extends Personne {
     private static int donNum = 0;
     private int quantite;
     private boolean motivation;
-    private Object donorCard[] = new Object[3]; // [[int DonorKey]|[String email]|[int telNumber]]
+   /* private Object donorCard[] = new Object[3]; // [[int DonorKey]|[String email]|[int telNumber]] //base de donnée ! pas besoin de ce tableau */
   private  String mail;
   private int numTel;
 
