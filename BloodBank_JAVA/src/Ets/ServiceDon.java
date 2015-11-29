@@ -8,20 +8,13 @@ public class ServiceDon {
 
     //isAgeTrue : Boolean
     //isHealthy : Boolean
-    public ServiceDon(){} 
-    
-     public boolean isAgeTrue(int age){
-    if ((age<60)&&(age>18))
-      return true;
-    else
-      return false;
-  }
+
+    public boolean isAgeTrue(int age){
+    return  ((age<60)&&(age>18);
+    }
   
-  public boolean Ishealthy(int poid ,int condphy){
-   if((IsAgeTrue)&&(poid>50)&&(condphy=5)) 
-     return true;
-    else
-      return false;
+  public boolean ishealthy(int poid ,int condphy){
+   return ((poid>50)&&(condphy>=4));
   }
 }
 // pas terminer;

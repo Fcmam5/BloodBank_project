@@ -14,7 +14,6 @@ public class Volunteer extends Personne {
         super(name, firstName, age,grouping, adresse);
         this.poids = poids;
         this.physical_cond_rate = physical_cond_rate;
-        
     }
 
   
