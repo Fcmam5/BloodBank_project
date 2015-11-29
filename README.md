@@ -27,7 +27,15 @@ Project in progress, please come back later.
 
 * People (Out of the virtual world)
  * [Dr Asmaa Bengueddach] (https://plus.google.com/107395584313151338301) (Guide, and supervisor and for encouraging)
+ * [Hebbar Walid] (https://plus.google.com/+WalidHebbar) (Great help in the databases )
  * [Itim Mohammed] (https://plus.google.com/u/0/112031870949182364995) (Advices and JAVA/DB tricks)
- *
+ * [Hebbar Walid] (https://plus.google.com/+WalidHebbar) (Great help in the databases )
  * [Ilyes Hammadi] (https://plus.google.com/115870453998097173463) (Sharing experience, and many advices)
  * [Haddadi Taymia] (https://plus.google.com/u/0/104647222134453039090) (Discussing the project, and guide on the first-steps)
+
+##Compare our project with real professional software
+http://www.bhansalisoft.com/Product.aspx?PID=6
+
+http://www.jagriti.co.in/case-study/blood-bank-management-system
+
+http://www.mak-system.net/software-solutions/blood-banks-ep/
