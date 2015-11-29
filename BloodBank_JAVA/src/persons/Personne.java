@@ -7,7 +7,7 @@ package persons;
 abstract class Personne {
     private String name;
     private String firstName;
-    private String grouping;
+    private String grouping; //on peut 'enlever mais au cas ou le med est un donneur'
     private int age;
     private String adresse[] = new String[2]; // [ "Wilaya" || "Daira"]
 
