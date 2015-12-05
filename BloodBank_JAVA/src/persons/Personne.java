@@ -5,6 +5,7 @@ package persons;
  * Implemented by nesrinehanane
  */
 abstract class Personne {
+    private int id;
     private String name;
     private String firstName;
     private String grouping; //on peut 'enlever mais au cas ou le med est un donneur'
@@ -12,7 +13,8 @@ abstract class Personne {
     private String adresse[] = new String[2]; // [ "Wilaya" || "Daira"]
 
 
-    public Personne(String name, String firstName, int age, String grouping , String adresse_given[]){
+    public Personne(int id, String name, String firstName, int age, String grouping , String adresse_given[]){
+        this.id=id;
         this.grouping=grouping;
         this.name=name;
         this.firstName=firstName;
@@ -27,9 +29,16 @@ abstract class Personne {
     }
 
     /*this one is for the doctor and the admin */
-    public Personne(String name, String firstName){
+     public Personne(int id,String name, String firstName,String mail,int phoneNumber,String adresse_given[] ){
+        this.id=id;
         this.name=name;
         this.firstName=firstName;
+        this.phoneNumber=phoneNumber;
+         this.adresse[0]=adresse_given[0];
+        this.adresse[1]=adresse_given[1];
+        this.mail=mail;
+        
+        
     }
 
 
@@ -66,5 +75,18 @@ abstract class Personne {
 
     public void setAdresse(String[] adresse) {
         this.adresse = adresse;
+    }
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 }
