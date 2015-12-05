@@ -4,21 +4,26 @@ package persons;
  * Created by fcmam5 on 11/13/15.
  * Implemented by nesrinehanane
  */
-abstract class Personne {
-    private int id;
+ public class Personne {
+  private int id;
     private String name;
     private String firstName;
     private String grouping; //on peut 'enlever mais au cas ou le med est un donneur'
     private int age;
     private String adresse[] = new String[2]; // [ "Wilaya" || "Daira"]
+    private String mail;
+    private int phoneNumber;
+    
 
 
-    public Personne(int id, String name, String firstName, int age, String grouping , String adresse_given[]){
+    public Personne(char id, String name, String firstName, int age, String grouping , String adresse_given[],String mail, int phoneNumber){
         this.id=id;
         this.grouping=grouping;
         this.name=name;
         this.firstName=firstName;
         this.age = age;
+        this.mail=mail;
+        this.phoneNumber=phoneNumber;
         /**
          * adresse_given[0] should be "Wilaya"
          * adresse_given[1] should be "Daira"
@@ -29,7 +34,7 @@ abstract class Personne {
     }
 
     /*this one is for the doctor and the admin */
-     public Personne(int id,String name, String firstName,String mail,int phoneNumber,String adresse_given[] ){
+    public Personne(int id,String name, String firstName,String mail,int phoneNumber,String adresse_given[] ){
         this.id=id;
         this.name=name;
         this.firstName=firstName;
@@ -76,6 +81,7 @@ abstract class Personne {
     public void setAdresse(String[] adresse) {
         this.adresse = adresse;
     }
+
     /**
      * @return the id
      */
@@ -89,4 +95,32 @@ abstract class Personne {
     public void setId(int id) {
         this.id = id;
     }
-}
+
+    /**
+     * @return the mail
+     */
+    public String getMail() {
+        return mail;
+    }
+
+    /**
+     * @param mail the mail to set
+     */
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    /**
+     * @return the phoneNumber
+     */
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    /**
+     * @param phoneNumber the phoneNumber to set
+     */
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+ }
