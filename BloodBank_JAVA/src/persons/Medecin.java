@@ -3,8 +3,8 @@ import java.util.Date;
 /**
  ** Created  on 12/05/15.
  * Implemented by nesrinehanane
- * /
-public class Medecin extends Personne{
+ * */
+ public class Medecin extends Personne{
     
     private Date dateIntegration;
 
@@ -12,6 +12,7 @@ public class Medecin extends Personne{
         super(id,name, firstName, mail, phoneNumber,adresse_given);
         this.dateIntegration=dateIntegration;
     }
+
 
     /**
      * @return the dateIntegration
