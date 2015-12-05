@@ -8,7 +8,7 @@ public class Medecin extends Personne{
     
     private Date dateIntegration;
 
-    public Medecin(char id,String name, String firstName,String mail,int phoneNumber,String adresse_given[], Date dateIntegration) {
+    public Medecin(int id,String name, String firstName,String mail,int phoneNumber,String adresse_given[], Date dateIntegration) {
         super(id,name, firstName, mail, phoneNumber,adresse_given);
         this.dateIntegration=dateIntegration;
     }
