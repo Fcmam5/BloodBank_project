@@ -10,13 +10,25 @@ package persons;
     private String firstName;
     private String grouping; //on peut 'enlever mais au cas ou le med est un donneur'
     private int age;
-    private String adresse[] = new String[2]; // [ "Wilaya" || "Daira"]
+    private double poids;
+    private Adresse adresse;
     private String mail;
     private int phoneNumber;
-    
+     
+    String Dayra = null;
+    String Wilaya = null;
 
 
-    public Personne(char id, String name, String firstName, int age, String grouping , String adresse_given[],String mail, int phoneNumber){
+    public Personne(
+            int id, 
+            String name, 
+            String firstName, 
+            int age, 
+            String grouping , 
+            Adresse adresse,
+            String mail, 
+            int phoneNumber,
+            double poids){
         this.id=id;
         this.grouping=grouping;
         this.name=name;
@@ -24,24 +36,29 @@ package persons;
         this.age = age;
         this.mail=mail;
         this.phoneNumber=phoneNumber;
-        /**
-         * adresse_given[0] should be "Wilaya"
-         * adresse_given[1] should be "Daira"
-         */
-        this.adresse[0]=adresse_given[0];
-        this.adresse[1]=adresse_given[1];
+        this.poids=poids;
+        adresse.setDayra(Dayra);        
+        adresse.setWilaya(Wilaya);
+       
 
     }
 
     /*this one is for the doctor and the admin */
-    public Personne(int id,String name, String firstName,String mail,int phoneNumber,String adresse_given[] ){
+    public Personne(
+            int id,
+            String name, 
+            String firstName,
+            String mail,
+            int phoneNumber,
+            Adresse adresse){
+        
         this.id=id;
         this.name=name;
         this.firstName=firstName;
         this.phoneNumber=phoneNumber;
-         this.adresse[0]=adresse_given[0];
-        this.adresse[1]=adresse_given[1];
         this.mail=mail;
+        adresse.setDayra(Dayra);        
+        adresse.setWilaya(Wilaya);
         
         
     }
@@ -74,14 +91,8 @@ package persons;
         this.age = age;
     }
 
-    public String[] getAdresse() {
-        return adresse;
-    }
-
-    public void setAdresse(String[] adresse) {
-        this.adresse = adresse;
-    }
-
+    
+    
     /**
      * @return the id
      */
@@ -122,5 +133,33 @@ package persons;
      */
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    /**
+     * @return the poids
+     */
+    public double getPoids() {
+        return poids;
+    }
+
+    /**
+     * @param poids the poids to set
+     */
+    public void setPoids(double poids) {
+        this.poids = poids;
+    }
+
+    /**
+     * @return the adresse
+     */
+    public Adresse getAdresse() {
+        return adresse;
+    }
+
+    /**
+     * @param adresse the adresse to set
+     */
+    public void setAdresse(Adresse adresse) {
+        this.adresse = adresse;
     }
  }
