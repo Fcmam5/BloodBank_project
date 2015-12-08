@@ -6,31 +6,28 @@ import java.util.Date;
  * */
  public class Medecin extends Personne{
     
-    private Date dateIntegration;
+   public class Medecin extends Personne{
+    
+    private String dateIntegration;
 
-    public Medecin(int id,String name, String firstName,String mail,int phoneNumber,String adresse_given[], Date dateIntegration) {
-        super(id,name, firstName, mail, phoneNumber,adresse_given);
+    public Medecin(int id,String name, String firstName,String mail,int phoneNumber,Adresse adresse, String dateIntegration) {
+        super(id,name, firstName, mail, phoneNumber,adresse);
         this.dateIntegration=dateIntegration;
     }
 
+    
 
     /**
      * @return the dateIntegration
      */
-    public Date getDateIntegration() {
+    public String getDateIntegration() {
         return dateIntegration;
     }
 
     /**
      * @param dateIntegration the dateIntegration to set
      */
-    public void setDateIntegration(Date dateIntegration) {
+    public void setDateIntegration(String dateIntegration) {
         this.dateIntegration = dateIntegration;
     }
-    
-    
-    
- 
-   
-    
 }
