@@ -26,54 +26,93 @@ public class BankWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu4 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
-        jDbState = new javax.swing.JRadioButton();
-        jAjouterDonor = new javax.swing.JButton();
-        jConsulterDonor = new javax.swing.JButton();
+        jDbStateBank = new javax.swing.JRadioButton();
+        jAjouterDoctor = new javax.swing.JButton();
+        jConsulterAvailableDon = new javax.swing.JButton();
+        jSupprimerDoctor = new javax.swing.JButton();
+        jStockBank = new javax.swing.JButton();
+        jPendingDonors = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        adminBank = new javax.swing.JMenu();
         jLogoutMenu = new javax.swing.JMenuItem();
         jExitMenu = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        jMaintain = new javax.swing.JMenu();
+        jDoctorMaintain = new javax.swing.JMenu();
+        jAddDoctorMenu = new javax.swing.JMenuItem();
+        jRemoveDoctorMenu = new javax.swing.JMenuItem();
+        jCheckStock = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jHelp = new javax.swing.JMenuItem();
         jAbout = new javax.swing.JMenuItem();
+
+        jMenu4.setText("jMenu4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Doctor");
 
         jPanel1.setLayout(null);
 
-        jDbState.setText("Disconnected");
-        jPanel1.add(jDbState);
-        jDbState.setBounds(10, 460, 108, 18);
+        jDbStateBank.setText("Disconnected");
+        jPanel1.add(jDbStateBank);
+        jDbStateBank.setBounds(10, 460, 108, 18);
 
-        jAjouterDonor.setText("New donor");
-        jAjouterDonor.addActionListener(new java.awt.event.ActionListener() {
+        jAjouterDoctor.setText("New Doctor");
+        jAjouterDoctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jAjouterDonorActionPerformed(evt);
+                jAjouterDoctorActionPerformed(evt);
             }
         });
-        jPanel1.add(jAjouterDonor);
-        jAjouterDonor.setBounds(40, 200, 230, 50);
+        jPanel1.add(jAjouterDoctor);
+        jAjouterDoctor.setBounds(50, 320, 230, 50);
 
-        jConsulterDonor.setText("Check pending donors");
-        jConsulterDonor.addActionListener(new java.awt.event.ActionListener() {
+        jConsulterAvailableDon.setText("Check Donors");
+        jConsulterAvailableDon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jConsulterDonorActionPerformed(evt);
+                jConsulterAvailableDonActionPerformed(evt);
             }
         });
-        jPanel1.add(jConsulterDonor);
-        jConsulterDonor.setBounds(40, 260, 230, 50);
+        jPanel1.add(jConsulterAvailableDon);
+        jConsulterAvailableDon.setBounds(50, 210, 230, 50);
+
+        jSupprimerDoctor.setText("Remove Doctor");
+        jSupprimerDoctor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jSupprimerDoctorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jSupprimerDoctor);
+        jSupprimerDoctor.setBounds(50, 380, 230, 50);
+
+        jStockBank.setText("Check Stock");
+        jStockBank.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jStockBankActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jStockBank);
+        jStockBank.setBounds(50, 80, 230, 50);
+
+        jPendingDonors.setText("Pending Request/Patient");
+        jPendingDonors.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPendingDonorsActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jPendingDonors);
+        jPendingDonors.setBounds(50, 140, 230, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/mainWindowBackground.png"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 760, 510);
 
-        jMenu1.setText("User");
+        adminBank.setText("Admin");
 
         jLogoutMenu.setText("Logout");
         jLogoutMenu.addActionListener(new java.awt.event.ActionListener() {
@@ -81,30 +120,51 @@ public class BankWindow extends javax.swing.JFrame {
                 jLogoutMenuActionPerformed(evt);
             }
         });
-        jMenu1.add(jLogoutMenu);
+        adminBank.add(jLogoutMenu);
 
         jExitMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
         jExitMenu.setText("Exit");
-        jMenu1.add(jExitMenu);
+        adminBank.add(jExitMenu);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(adminBank);
 
-        jMenu2.setText("Maintain");
+        jMaintain.setText("Manage");
 
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem4.setText("New Donor");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        jDoctorMaintain.setText("Doctors");
+
+        jAddDoctorMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_MASK));
+        jAddDoctorMenu.setText("Add doctor");
+        jDoctorMaintain.add(jAddDoctorMenu);
+
+        jRemoveDoctorMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.SHIFT_MASK));
+        jRemoveDoctorMenu.setText("Remove doctor");
+        jDoctorMaintain.add(jRemoveDoctorMenu);
+
+        jMaintain.add(jDoctorMaintain);
+
+        jCheckStock.setText("Stock");
+
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_MASK));
+        jMenuItem3.setText("Check stock");
+        jCheckStock.add(jMenuItem3);
+
+        jMaintain.add(jCheckStock);
+        jMaintain.add(jSeparator1);
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem1.setText("Pending requests");
+        jMaintain.add(jMenuItem1);
+
+        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem5.setText("Stats");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                jMenuItem5ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem4);
+        jMaintain.add(jMenuItem5);
 
-        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_MASK));
-        jMenuItem5.setText("Check donors");
-        jMenu2.add(jMenuItem5);
-
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(jMaintain);
 
         jMenu3.setText("Help");
 
@@ -134,21 +194,33 @@ public class BankWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
-
     private void jLogoutMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLogoutMenuActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jLogoutMenuActionPerformed
 
-    private void jAjouterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAjouterDonorActionPerformed
+    private void jAjouterDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAjouterDoctorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jAjouterDonorActionPerformed
+    }//GEN-LAST:event_jAjouterDoctorActionPerformed
 
-    private void jConsulterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConsulterDonorActionPerformed
+    private void jConsulterAvailableDonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConsulterAvailableDonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jConsulterDonorActionPerformed
+    }//GEN-LAST:event_jConsulterAvailableDonActionPerformed
+
+    private void jSupprimerDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSupprimerDoctorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jSupprimerDoctorActionPerformed
+
+    private void jStockBankActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jStockBankActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jStockBankActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jPendingDonorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPendingDonorsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPendingDonorsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,20 +258,30 @@ public class BankWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu adminBank;
     private javax.swing.JMenuItem jAbout;
-    private javax.swing.JButton jAjouterDonor;
-    private javax.swing.JButton jConsulterDonor;
-    private javax.swing.JRadioButton jDbState;
+    private javax.swing.JMenuItem jAddDoctorMenu;
+    private javax.swing.JButton jAjouterDoctor;
+    private javax.swing.JMenu jCheckStock;
+    private javax.swing.JButton jConsulterAvailableDon;
+    private javax.swing.JRadioButton jDbStateBank;
+    private javax.swing.JMenu jDoctorMaintain;
     private javax.swing.JMenuItem jExitMenu;
     private javax.swing.JMenuItem jHelp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jLogoutMenu;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMaintain;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jPendingDonors;
+    private javax.swing.JMenuItem jRemoveDoctorMenu;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JButton jStockBank;
+    private javax.swing.JButton jSupprimerDoctor;
     // End of variables declaration//GEN-END:variables
 }
