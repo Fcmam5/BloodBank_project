@@ -9,7 +9,7 @@ public class Patient extends Personne {
    private int quantite;
     private int degre_urg; //Scale on 10 ex (xx/10)
 
-    public Patient(int quantite,byte degre_urg,String adresse[],String grouping, String name,String firstName,int age){
+    public Patient(int quantite,byte degre_urg,Adresse adresse,String grouping, String name,String firstName,int age){
         super(name, firstName, age, grouping, adresse);
         this.degre_urg=degre_urg;
         this.quantite=quantite;
