@@ -32,7 +32,7 @@ Project in progress, please come back later.
  * [Hebbar Walid] (https://plus.google.com/+WalidHebbar) (Great help in the databases )
  * [Ilyes Hammadi] (https://plus.google.com/115870453998097173463) (Sharing experience, and many advices)
  * [Haddadi Taymia] (https://plus.google.com/u/0/104647222134453039090) (Discussing the project, and guide on the first-steps)
- * [Mme Sidali Mebarek](Helped For modeling)
+ * [Mme Sidali Mebarek](#)(Helped For modeling)
 
 ##Compare our project with real professional software
 http://www.bhansalisoft.com/Product.aspx?PID=6
