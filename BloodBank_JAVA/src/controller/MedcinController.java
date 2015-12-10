@@ -1,6 +1,7 @@
+/**
+* Created & Implemented by nourelhouda
+*/
 public class MedcinController {
-    private int age ;
-    private boolean derdon;
 
     public void ajouterDoneur(/*les info de dialog*/) {
         // base de donnée : ajouter donor
