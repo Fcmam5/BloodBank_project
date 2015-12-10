@@ -1,0 +1,45 @@
+
+// djalil j'ai po terminer le code dsl :/
+
+public class MedcinController {
+    private int age ;
+    private boolean derdon;
+    
+    public void AjouterDoneur(/*les info de dialog*/) {
+        // base de donnée : ajouter donor
+    
+}
+    
+    public boolean VerifierAge(){
+        if ((age <18)&&(age>=65))
+            return false ;
+       // System.out.println("non vérifier");
+        else
+            return true ;
+        // System.out.println("vérifier");
+    }
+    
+    public boolean dernierDon (){
+        if(derdon== true )//cad le dernier don est egale a 4 mois
+            return true ;
+        else 
+            return false ; // cad le dernier don est inferieure a 4 mois
+       
+    }
+    
+    
+    public boolean verPoids(){
+        if (getPoids >= 50)
+            return true ; // le poid est superieure a 50 kg
+        else
+            return false ; // le poids est < a 50 kg
+    }
+    // verification sur les info du medcin
+    // on v verifier que la date d'integration
+    
+    // dsl je c po comment le faire :/ 
+    
+    
+    
+}
+   
