@@ -10,7 +10,7 @@ public class MedcinController {
         // base de donnée : ajouter donor
 }
 
-    public boolean verifierAge(int Age){
+    public boolean verifierAge(int age){
         return ((age <18)&&(age>=65));
           }
 
