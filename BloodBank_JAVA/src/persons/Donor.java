@@ -24,7 +24,7 @@ public class Donor extends Personne {
             double poids
             int quantite,
             byte motivation) {
-        super(id,name, firstName, age, grouping, adresse);
+        super(id,name, firstName, age, grouping, adresse,mail,phoneNumber,poids);
      
         this.quantite = quantite;
         this.motivation = motivation;
