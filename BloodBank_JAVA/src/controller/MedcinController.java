@@ -10,7 +10,6 @@ public class MedcinController {
 
     public boolean verifierAge(){
         return ((age <18)&&(age>=65))
-            return false ;
           }
 
 
