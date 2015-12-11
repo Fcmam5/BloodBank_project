@@ -11,8 +11,7 @@ public class Donor extends Personne {
     private int quantite;
     private byte motivation;
    /* private Object donorCard[] = new Object[3];// [[int DonorKey]|[String email]|[int telNumber]] //base de donnée ! pas besoin de ce tableau */
-  private  String mail;
-  private int numTel;
+ 
 
     public Donor(int id, String name, String firstName, int age, String grouping, String[] adresse, int quantite, boolean motivation,String mail, int numTel) {
         super(id,name, firstName, age, grouping, adresse);
