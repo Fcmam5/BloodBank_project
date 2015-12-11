@@ -12,9 +12,7 @@ public class Donor extends Personne {
     private byte motivation;
    
 
-    public Donor(int id, String name, String firstName, int age, String grouping, String[] adresse, int quantite, boolean motivation,String mail, int numTel) {
-        super( 
-            int id,
+    public Donor(int id, 
             String name, 
             String firstName, 
             int age, 
@@ -22,7 +20,19 @@ public class Donor extends Personne {
             Adresse adresse,
             String mail, 
             int phoneNumber,
-            double poids);
+            double poids
+            int quantite
+            byte motivation) {
+        super( int id, 
+            String name, 
+            String firstName, 
+            int age, 
+            String grouping , 
+            Adresse adresse,
+            String mail, 
+            int phoneNumber,
+            double poids
+            );
       
         this.quantite = quantite;
         this.motivation = motivation;
