@@ -1,7 +1,5 @@
+package persons;
 public class Adresse {
-
-    
-    
     
     private String wilaya ;
     private String dayra ; 

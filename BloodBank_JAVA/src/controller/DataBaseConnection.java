@@ -34,15 +34,7 @@ public class DataBaseConnection {
         }
     // HATA LAHNA LABASS
     // ********************************************************************************//
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 10b8e819ec9371b8bf7e537adbd37fb46054b27f
-=======
-    
->>>>>>> 10b8e819ec9371b8bf7e537adbd37fb46054b27f
+/**
             //STEP 4: Execute a query
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
@@ -75,4 +67,5 @@ public class DataBaseConnection {
         }//end try
         System.out.println("Goodbye!");
     }//end main
+**/
 }
