@@ -31,17 +31,6 @@ public class Donor extends Personne {
          
     }
 
-
-    public void setGroupage (String gropage){
-        this.groupage=groupage;
-        
-}
-    public String getGroupage(){
-        return getGrouping();
-}
-
-   
-
     // HOw much he gives ?
     public void setQuantite (int quantite){
     this.quantite=quantite;
