@@ -1,3 +1,5 @@
+package controller;
+
 /**
 * Created by nourelhouda
 * Implemented by nourelhouda & Fcmam5
@@ -8,8 +10,8 @@ public class MedcinController {
         // base de donnée : ajouter donor
 }
 
-    public boolean verifierAge(){
-        return ((age <18)&&(age>=65))
+    public boolean verifierAge(int Age){
+        return ((age <18)&&(age>=65));
           }
 
 
