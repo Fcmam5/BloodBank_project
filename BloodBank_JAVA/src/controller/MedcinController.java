@@ -1,5 +1,6 @@
 /**
-* Created & Implemented by nourelhouda
+* Created by nourelhouda
+* Implemented by nourelhouda & Fcmam5
 */
 public class MedcinController {
 
@@ -15,6 +16,11 @@ public class MedcinController {
 
     public boolean verPoids(int poids){
         return poids>=50;
+    }
+
+    public boolean isValideName(String name){
+      //Contains letters only !
+      return name.matches("[a-zA-Z]+");
     }
 
     //Need : Date du dernier don
