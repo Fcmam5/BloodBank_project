@@ -1,3 +1,8 @@
+package views;
+
+
+import views.MedcinMainWindow;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +20,7 @@ public class BankWindow extends javax.swing.JFrame {
      */
     public BankWindow() {
         initComponents();
+        
     }
 
     /**
@@ -55,7 +61,7 @@ public class BankWindow extends javax.swing.JFrame {
         jMenu4.setText("jMenu4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Doctor");
+        setTitle("Bloodbank Manager");
 
         jPanel1.setLayout(null);
 
@@ -79,7 +85,7 @@ public class BankWindow extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jConsulterAvailableDon);
-        jConsulterAvailableDon.setBounds(50, 210, 230, 50);
+        jConsulterAvailableDon.setBounds(50, 200, 230, 50);
 
         jSupprimerDoctor.setText("Remove Doctor");
         jSupprimerDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +114,7 @@ public class BankWindow extends javax.swing.JFrame {
         jPanel1.add(jPendingDonors);
         jPendingDonors.setBounds(50, 140, 230, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/mainWindowBackground.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/views/img/mainWindowBackground.png"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 760, 510);
 
@@ -254,6 +260,8 @@ public class BankWindow extends javax.swing.JFrame {
             public void run() {
                 new MedcinMainWindow().setVisible(true);
             }
+            
+           
         });
     }
 
@@ -284,4 +292,5 @@ public class BankWindow extends javax.swing.JFrame {
     private javax.swing.JButton jStockBank;
     private javax.swing.JButton jSupprimerDoctor;
     // End of variables declaration//GEN-END:variables
+// trt it here lol
 }

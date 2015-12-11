@@ -1,3 +1,8 @@
+package views;
+
+
+import views.MedcinMainWindow;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,12 +13,12 @@
  *
  * @author fcmam5
  */
-public class MedcinMainWindow extends javax.swing.JFrame {
+public class LabMainWindow extends javax.swing.JFrame {
 
     /**
      * Creates new form MedcinMainWindow
      */
-    public MedcinMainWindow() {
+    public LabMainWindow() {
         initComponents();
     }
 
@@ -28,7 +33,8 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jDbState = new javax.swing.JRadioButton();
-        jAjouterDonor = new javax.swing.JButton();
+        jAnalyser = new javax.swing.JButton();
+        jContacterDoneur = new javax.swing.JButton();
         jConsulterDonor = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -43,7 +49,7 @@ public class MedcinMainWindow extends javax.swing.JFrame {
         jAbout = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Doctor");
+        setTitle("Laboratory");
 
         jPanel1.setLayout(null);
 
@@ -51,14 +57,23 @@ public class MedcinMainWindow extends javax.swing.JFrame {
         jPanel1.add(jDbState);
         jDbState.setBounds(10, 460, 108, 18);
 
-        jAjouterDonor.setText("New donor");
-        jAjouterDonor.addActionListener(new java.awt.event.ActionListener() {
+        jAnalyser.setText("Analyse");
+        jAnalyser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jAjouterDonorActionPerformed(evt);
+                jAnalyserActionPerformed(evt);
             }
         });
-        jPanel1.add(jAjouterDonor);
-        jAjouterDonor.setBounds(40, 200, 230, 50);
+        jPanel1.add(jAnalyser);
+        jAnalyser.setBounds(40, 200, 230, 50);
+
+        jContacterDoneur.setText("Contact donors");
+        jContacterDoneur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jContacterDoneurActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jContacterDoneur);
+        jContacterDoneur.setBounds(40, 320, 230, 50);
 
         jConsulterDonor.setText("Check pending donors");
         jConsulterDonor.addActionListener(new java.awt.event.ActionListener() {
@@ -69,7 +84,7 @@ public class MedcinMainWindow extends javax.swing.JFrame {
         jPanel1.add(jConsulterDonor);
         jConsulterDonor.setBounds(40, 260, 230, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/mainWindowBackground.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/views/img/mainWindowBackground.png"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 760, 510);
 
@@ -91,7 +106,7 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
         jMenu2.setText("Maintain");
 
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem4.setText("New Donor");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,9 +157,13 @@ public class MedcinMainWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLogoutMenuActionPerformed
 
-    private void jAjouterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAjouterDonorActionPerformed
+    private void jAnalyserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAnalyserActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jAjouterDonorActionPerformed
+    }//GEN-LAST:event_jAnalyserActionPerformed
+
+    private void jContacterDoneurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jContacterDoneurActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jContacterDoneurActionPerformed
 
     private void jConsulterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConsulterDonorActionPerformed
         // TODO add your handling code here:
@@ -187,8 +206,9 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem jAbout;
-    private javax.swing.JButton jAjouterDonor;
+    private javax.swing.JButton jAnalyser;
     private javax.swing.JButton jConsulterDonor;
+    private javax.swing.JButton jContacterDoneur;
     private javax.swing.JRadioButton jDbState;
     private javax.swing.JMenuItem jExitMenu;
     private javax.swing.JMenuItem jHelp;
