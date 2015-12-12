@@ -1,11 +1,17 @@
-package persons;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package models;
+
 
 /**
- * Created by fcmam5 on 11/13/15.
- * Implemented by nesrinehanane
+ *
+ * @author TOSHIBA
  */
- public class Personne {
-  private int id;
+public class Personne {
+    private int id;
     private String name;
     private String firstName;
     private String grouping; //on peut 'enlever mais au cas ou le med est un donneur'
@@ -13,7 +19,7 @@ package persons;
     private double poids;
     private Adresse adresse;
     private String mail;
-    private int phoneNumber;
+    private String phoneNumber;
      
     String Dayra = null;
     String Wilaya = null;
@@ -27,7 +33,7 @@ package persons;
             String grouping , 
             Adresse adresse,
             String mail, 
-            int phoneNumber,
+            String phoneNumber,
             double poids){
         this.id=id;
         this.grouping=grouping;
@@ -49,7 +55,7 @@ package persons;
             String name, 
             String firstName,
             String mail,
-            int phoneNumber,
+            String phoneNumber,
             Adresse adresse){
         
         this.id=id;
@@ -124,14 +130,14 @@ package persons;
     /**
      * @return the phoneNumber
      */
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
     /**
      * @param phoneNumber the phoneNumber to set
      */
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -162,4 +168,8 @@ package persons;
     public void setAdresse(Adresse adresse) {
         this.adresse = adresse;
     }
- }
+    
+    
+    
+}
+  

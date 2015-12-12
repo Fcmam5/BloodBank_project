@@ -1,12 +1,25 @@
-package persons;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package models;
+
+/**
+ *
+ * @author TOSHIBA
+ */
 public class Adresse {
-    
     private String wilaya ;
     private String dayra ; 
     
     public Adresse(String wilaya, String dayra) {
         this.wilaya = wilaya;
         this.dayra = dayra;
+    }
+
+   public Adresse() {
+        
     }
 
     public String getWilaya() {
@@ -27,4 +40,9 @@ public class Adresse {
     
     
     
+    @Override
+    public String toString(){
+    return "dayra: "+ getDayra()+ "  wilaya : "+ getWilaya();
+    
+}
 }
