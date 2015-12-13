@@ -1,6 +1,7 @@
 package views;
 
 
+import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.util.logging.Level;
@@ -59,7 +60,7 @@ public class LabMainWindow extends javax.swing.JFrame {
 
         jDbState.setText("Disconnected");
         jPanel1.add(jDbState);
-        jDbState.setBounds(10, 460, 89, 23);
+        jDbState.setBounds(10, 460, 108, 18);
 
         jAnalyser.setText("Analyse");
         jAnalyser.addActionListener(new java.awt.event.ActionListener() {
@@ -104,6 +105,11 @@ public class LabMainWindow extends javax.swing.JFrame {
 
         jExitMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
         jExitMenu.setText("Exit");
+        jExitMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jExitMenuActionPerformed(evt);
+            }
+        });
         jMenu1.add(jExitMenu);
 
         jMenuBar1.add(jMenu1);
@@ -131,6 +137,11 @@ public class LabMainWindow extends javax.swing.JFrame {
         jMenu3.add(jHelp);
 
         jAbout.setText("About");
+        jAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jAboutActionPerformed(evt);
+            }
+        });
         jMenu3.add(jAbout);
 
         jMenuBar1.add(jMenu3);
@@ -159,6 +170,9 @@ public class LabMainWindow extends javax.swing.JFrame {
 
     private void jLogoutMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLogoutMenuActionPerformed
         // TODO add your handling code here:
+        new Login();
+        this.dispose();
+
     }//GEN-LAST:event_jLogoutMenuActionPerformed
 
     private void jAnalyserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAnalyserActionPerformed
@@ -179,6 +193,26 @@ public class LabMainWindow extends javax.swing.JFrame {
     private void jConsulterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConsulterDonorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jConsulterDonorActionPerformed
+
+    private void jExitMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitMenuActionPerformed
+        // TODO add your handling code here:
+                this.dispose();
+
+    }//GEN-LAST:event_jExitMenuActionPerformed
+
+    private void jAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAboutActionPerformed
+        
+            
+        try {
+            Desktop.getDesktop().browse(java.net.URI.create("http://fcmam5.github.io/BloodBank_project/"));
+        } catch (IOException ex) {
+            Logger.getLogger(LabMainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
+
+
+    }//GEN-LAST:event_jAboutActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,7 +1,11 @@
 package views;
 
 
+import java.awt.Desktop;
 import java.awt.event.MouseMotionListener;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import models.Medecin;
@@ -79,7 +83,7 @@ public class BankWindow extends javax.swing.JFrame {
 
         jDbStateBank.setText("Disconnected");
         jPanel1.add(jDbStateBank);
-        jDbStateBank.setBounds(10, 460, 89, 23);
+        jDbStateBank.setBounds(10, 460, 108, 18);
 
         jConsulterAvailableDon.setText("Check Donors");
         jConsulterAvailableDon.addActionListener(new java.awt.event.ActionListener() {
@@ -142,6 +146,11 @@ public class BankWindow extends javax.swing.JFrame {
 
         jExitMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
         jExitMenu.setText("Exit");
+        jExitMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jExitMenuActionPerformed(evt);
+            }
+        });
         adminBank.add(jExitMenu);
 
         jMenuBar1.add(adminBank);
@@ -190,6 +199,11 @@ public class BankWindow extends javax.swing.JFrame {
         jMenu3.add(jHelp);
 
         jAbout.setText("About");
+        jAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jAboutActionPerformed(evt);
+            }
+        });
         jMenu3.add(jAbout);
 
         jMenuBar1.add(jMenu3);
@@ -214,6 +228,8 @@ public class BankWindow extends javax.swing.JFrame {
 
     private void jLogoutMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLogoutMenuActionPerformed
         // TODO add your handling code here:
+                new Login();
+        this.dispose();
     }//GEN-LAST:event_jLogoutMenuActionPerformed
 
     private void jAjouterDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAjouterDoctorActionPerformed
@@ -263,6 +279,20 @@ public class BankWindow extends javax.swing.JFrame {
        });
       liste.setVisible(true);
     }//GEN-LAST:event_jAjouterMedecinActionPerformed
+
+    private void jExitMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitMenuActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jExitMenuActionPerformed
+
+    private void jAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAboutActionPerformed
+        // TODO add your handling code here:
+           try {
+            Desktop.getDesktop().browse(java.net.URI.create("http://fcmam5.github.io/BloodBank_project/"));
+        } catch (IOException ex) {
+            Logger.getLogger(LabMainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jAboutActionPerformed
 
     /**
      * @param args the command line arguments
