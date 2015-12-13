@@ -64,6 +64,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Add doctor"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jAddDoctorMenuActionPerformed"/>
+                  </Events>
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jRemoveDoctorMenu">
                   <Properties>

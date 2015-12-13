@@ -58,7 +58,7 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
         jDbState.setText("Disconnected");
         jPanel1.add(jDbState);
-        jDbState.setBounds(10, 460, 89, 23);
+        jDbState.setBounds(10, 460, 108, 18);
 
         jAjouterDonor.setText("New donor");
         jAjouterDonor.addActionListener(new java.awt.event.ActionListener() {
@@ -111,6 +111,11 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_MASK));
         jMenuItem5.setText("Check donors");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem5);
 
         jMenuBar1.add(jMenu2);
@@ -145,6 +150,28 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
+          
+        Donor  don= Donor_dialogue.ajouterDonor();
+        
+         /*new  formulaireMedecin().setVisible(true);*/
+      DefaultTableModel model1= (DefaultTableModel)listeD.getListeDonor().getModel();
+       model1.addRow(
+       new Object[]  {
+           don.getId(),
+           don.getName(),
+           don.getFirstName(),
+           don.getAge(),
+           don.getGrouping(),
+           don.getAdresse(),
+           don.getMail(),
+           don.getQuantite(),
+           don.getPhoneNumber(),
+           don.getMotivation(),
+           don.getPoids()
+          
+          
+           
+       });
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jLogoutMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLogoutMenuActionPerformed
@@ -186,7 +213,15 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
     private void jConsulterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConsulterDonorActionPerformed
         // TODO add your handling code here:
+                listeD.setVisible(true);
+
     }//GEN-LAST:event_jConsulterDonorActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+                listeD.setVisible(true);
+
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments

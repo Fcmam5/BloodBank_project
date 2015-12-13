@@ -161,6 +161,11 @@ public class BankWindow extends javax.swing.JFrame {
 
         jAddDoctorMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_MASK));
         jAddDoctorMenu.setText("Add doctor");
+        jAddDoctorMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jAddDoctorMenuActionPerformed(evt);
+            }
+        });
         jDoctorMaintain.add(jAddDoctorMenu);
 
         jRemoveDoctorMenu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.SHIFT_MASK));
@@ -293,6 +298,26 @@ public class BankWindow extends javax.swing.JFrame {
             Logger.getLogger(LabMainWindow.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jAboutActionPerformed
+
+    private void jAddDoctorMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAddDoctorMenuActionPerformed
+        // TODO add your handling code here:
+        
+        Medecin med= formulaireMedecin.ajouterMedecin();
+        
+         /*new  formulaireMedecin().setVisible(true);*/
+      DefaultTableModel model1= (DefaultTableModel)liste.getListeMedecin().getModel();
+       model1.addRow(
+       new Object[]  {
+           med.getId(),
+           med.getName(),
+           med.getFirstName(),
+           med.getAdresse(),
+           med.getMail(),
+           med.getPhoneNumber(),
+           med.getDateIntegration()
+       });
+      liste.setVisible(true);
+    }//GEN-LAST:event_jAddDoctorMenuActionPerformed
 
     /**
      * @param args the command line arguments

@@ -7,6 +7,7 @@ import java.net.URI;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import views.MedcinMainWindow;
+import static views.MedcinMainWindow.listeD;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -127,6 +128,11 @@ public class LabMainWindow extends javax.swing.JFrame {
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_MASK));
         jMenuItem5.setText("Check donors");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem5);
 
         jMenuBar1.add(jMenu2);
@@ -192,6 +198,8 @@ public class LabMainWindow extends javax.swing.JFrame {
 
     private void jConsulterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConsulterDonorActionPerformed
         // TODO add your handling code here:
+                listeD.setVisible(true);
+
     }//GEN-LAST:event_jConsulterDonorActionPerformed
 
     private void jExitMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitMenuActionPerformed
@@ -213,6 +221,12 @@ public class LabMainWindow extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_jAboutActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+                listeD.setVisible(true);
+
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
