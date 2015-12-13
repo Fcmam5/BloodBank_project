@@ -177,7 +177,7 @@ byte motivation;
             }
         });
         jPanel1.add(jRadioButton1_Motivation_oui);
-        jRadioButton1_Motivation_oui.setBounds(150, 200, 43, 23);
+        jRadioButton1_Motivation_oui.setBounds(150, 200, 90, 18);
 
         jButton1_Reset.setText("Reset");
         jButton1_Reset.addActionListener(new java.awt.event.ActionListener() {
@@ -213,7 +213,7 @@ byte motivation;
             }
         });
         jPanel1.add(jRadioButton_MOTIVATION_non);
-        jRadioButton_MOTIVATION_non.setBounds(280, 200, 39, 23);
+        jRadioButton_MOTIVATION_non.setBounds(280, 200, 39, 18);
 
         j_NUM_Télephone1.setText("PHONE_NUMBER");
         jPanel1.add(j_NUM_Télephone1);
@@ -297,6 +297,13 @@ byte motivation;
         jNumTelDon.setText(null);
         jRadioButton1_Motivation_oui.setSelected(false);
         jRadioButton_MOTIVATION_non.setSelected(false);
+        jGroupageDon.setText(null);
+        jAgeDon.setText(null);
+        jWilayaDon.setText(null);
+        jDayraDon1.setText(null);
+        jNumTelDon.setText(null);
+        jMailDon.setText(null);
+        jPoidsDon.setText(null);
        
         // TODO add your handlin.scode here:
     }//GEN-LAST:event_jButton1_ResetActionPerformed

@@ -149,6 +149,8 @@ public class MedcinMainWindow extends javax.swing.JFrame {
 
     private void jLogoutMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLogoutMenuActionPerformed
         // TODO add your handling code here:
+                new Login();
+        this.dispose();
     }//GEN-LAST:event_jLogoutMenuActionPerformed
 
     private void jAjouterDonorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAjouterDonorActionPerformed
