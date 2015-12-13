@@ -292,11 +292,7 @@ public class BankWindow extends javax.swing.JFrame {
 
     private void jAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAboutActionPerformed
         // TODO add your handling code here:
-           try {
-            Desktop.getDesktop().browse(java.net.URI.create("http://fcmam5.github.io/BloodBank_project/"));
-        } catch (IOException ex) {
-            Logger.getLogger(LabMainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        }
+          new About().setVisible(true);
     }//GEN-LAST:event_jAboutActionPerformed
 
     private void jAddDoctorMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAddDoctorMenuActionPerformed

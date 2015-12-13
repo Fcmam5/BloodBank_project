@@ -126,6 +126,11 @@ public class MedcinMainWindow extends javax.swing.JFrame {
         jMenu3.add(jHelp);
 
         jAbout.setText("About");
+        jAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jAboutActionPerformed(evt);
+            }
+        });
         jMenu3.add(jAbout);
 
         jMenuBar1.add(jMenu3);
@@ -222,6 +227,12 @@ public class MedcinMainWindow extends javax.swing.JFrame {
                 listeD.setVisible(true);
 
     }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAboutActionPerformed
+        // TODO add your handling code here:
+                  new About().setVisible(true);
+
+    }//GEN-LAST:event_jAboutActionPerformed
 
     /**
      * @param args the command line arguments

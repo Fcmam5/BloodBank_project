@@ -211,11 +211,8 @@ public class LabMainWindow extends javax.swing.JFrame {
     private void jAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAboutActionPerformed
         
             
-        try {
-            Desktop.getDesktop().browse(java.net.URI.create("http://fcmam5.github.io/BloodBank_project/"));
-        } catch (IOException ex) {
-            Logger.getLogger(LabMainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            new About().setVisible(true);
+
 
 
 
