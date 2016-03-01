@@ -1,4 +1,6 @@
 # BloodBank_project
+
+[![Join the chat at https://gitter.im/Fcmam5/BloodBank_project](https://badges.gitter.im/Fcmam5/BloodBank_project.svg)](https://gitter.im/Fcmam5/BloodBank_project?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 LMD L2/Groupe1/Team1. OOP Project
 ##About
 Project in progress, please come back later.
